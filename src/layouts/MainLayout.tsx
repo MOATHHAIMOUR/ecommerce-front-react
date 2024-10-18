@@ -3,11 +3,9 @@ import Header from "@components/common/Header";
 import { Outlet } from "react-router-dom";
 
 const MainLayout = () => (
-  <div className="p-4 h-[100vh] w-3/4 mx-auto bg-slate-200 flex flex-col">
+  <div className="mx-auto flex h-[100vh] w-3/4 flex-col">
     <Header />
-    <div className="flex-grow-[1]">
-      <Outlet />
-    </div>
+    <div className="flex-grow-[1]"></div>
     <Footer />
   </div>
 );

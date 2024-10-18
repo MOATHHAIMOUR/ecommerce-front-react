@@ -1,7 +1,7 @@
 {
   "compilerOptions": {
     "target": "ES2022",
-    "lib": ["ES2023"],
+    "lib": ["ES2023", "dom"], // Include 'dom' to access browser APIs like 'document'
     "module": "ESNext",
     "skipLibCheck": true,
 
@@ -11,7 +11,6 @@
     "isolatedModules": true,
     "moduleDetection": "force",
     "noEmit": true,
-
     /* JSX support */
     "jsx": "react-jsx", // If you're using React 17 or newer; use "react" for older versions
 
