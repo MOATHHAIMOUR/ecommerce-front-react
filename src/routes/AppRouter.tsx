@@ -2,11 +2,11 @@ import { createBrowserRouter, RouterProvider } from "react-router-dom";
 // layouts
 import MainLayout from "@layouts/MainLayout";
 // Pages
-import Home from "@pages/Home";
-import Categories from "@pages/categories";
 import AboutAs from "@pages/AboutAs";
 import Products from "@pages/Products";
 import Error from "@pages/Error";
+import Home from "src/features/Home/pages/Home";
+import Categories from "@pages/Categories";
 
 const router = createBrowserRouter([
   {

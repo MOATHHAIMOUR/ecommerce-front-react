@@ -1,6 +1,5 @@
-import Footer from "@components/common/Footer";
-import Header from "@components/common/Header";
-import { Outlet } from "react-router-dom";
+import Footer from "src/core/components/Footer";
+import Header from "src/core/components/Header";
 
 const MainLayout = () => (
   <div className="mx-auto flex h-[100vh] w-3/4 flex-col">

@@ -3,6 +3,7 @@ import globals from "globals";
 import react from "eslint-plugin-react";
 import reactHooks from "eslint-plugin-react-hooks";
 import reactRefresh from "eslint-plugin-react-refresh";
+import unusedImports from "eslint-plugin-unused-imports"; // Import the plugin instead of requiring it
 
 export default [
   { ignores: ["dist"] }, // Ignore the 'dist' directory
@@ -25,13 +26,15 @@ export default [
       react,
       "react-hooks": reactHooks,
       "react-refresh": reactRefresh,
-      "unused-imports": require("eslint-plugin-unused-imports"),
+      "unused-imports": unusedImports, // Use the imported plugin here
     },
     rules: {
       ...jsConfigs.recommended.rules, // Reference the jsConfigs object
       ...react.configs.recommended.rules,
       ...react.configs["jsx-runtime"].rules,
       ...reactHooks.configs.recommended.rules,
+      test: /\.svg$/,
+      use: ["@svgr/webpack"],
 
       // Disable no target blank rule
       "react/jsx-no-target-blank": "off",

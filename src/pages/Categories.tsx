@@ -1,9 +1,9 @@
 import actGetCategories from "@store/categories/act/actGetCategories";
-import { useAppDispatch, useAppSelector } from "@store/hooks";
+import { useAppDispatch } from "@store/hooks";
 import { useEffect } from "react";
 
 export default function Categories() {
-  const { status, records, error } = useAppSelector((state) => state.category);
+  //const { status, records, error } = useAppSelector((state) => state.category);
   const dispatch = useAppDispatch();
 
   useEffect(() => {

@@ -1,6 +1,4 @@
-type Meta = {
-  count: number;
-};
+type Meta = {};
 
 type Error = {
   code: string;
