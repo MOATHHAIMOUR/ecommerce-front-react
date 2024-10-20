@@ -7,9 +7,9 @@ import Container from "./container";
 
 export default function MiddleBar() {
   return (
-    <div className="absolute left-0 top-[50px] h-[70px] w-full bg-[#003F62]">
+    <div className="w-full bg-[#003F62]">
       <Container>
-        <div className="flex w-full items-center justify-between">
+        <div className="flex h-[60px] w-full items-center justify-between">
           <ul className="flex items-center gap-5">
             <Logo />
             <SearchBar />

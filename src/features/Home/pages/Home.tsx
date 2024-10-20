@@ -1,3 +1,10 @@
+import Container from "src/core/components/container";
+import CarouselSlider from "../components/carouselSlider";
+
 export default function Home() {
-  return <div className="bg-red-400">Home</div>;
+  return (
+    <Container>
+      <CarouselSlider />
+    </Container>
+  );
 }

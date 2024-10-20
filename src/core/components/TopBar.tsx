@@ -1,10 +1,10 @@
 import TruckSvg from "@assets/svg/TrukSvg";
 import CustomLink from "./CustomLink";
+import Container from "./container";
 export default function TopNavigation() {
   return (
-    <div className="flex h-[50px] flex-col justify-center gap-5">
-      {/* Start nav links */}
-      <nav className="flex items-center justify-between">
+    <Container>
+      <nav className="flex h-[50px] w-full items-center justify-between">
         <ul className="flex justify-start">
           <p>Need help? Call us: (+98) 0234 456 789</p>
         </ul>
@@ -12,7 +12,6 @@ export default function TopNavigation() {
           <CustomLink to="/track" title="Track your order" svg={<TruckSvg />} />
         </ul>
       </nav>
-      {/* End nav Links */}
-    </div>
+    </Container>
   );
 }

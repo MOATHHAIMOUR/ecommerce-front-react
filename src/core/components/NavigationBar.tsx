@@ -4,11 +4,11 @@ import { useState } from "react";
 import CustomLink from "./CustomLink";
 import Container from "./container";
 
-export default function NavigationMenu() {
+export default function NavigationBar() {
   return (
-    <div className="absolute left-0 top-[120px] h-[50px] w-full bg-[#F4F4F4]">
+    <div className="w-full bg-[#F4F4F4]">
       <Container>
-        <div className="flex h-[50px] w-full items-center justify-between">
+        <div className="flex h-full w-full items-center justify-between">
           <div className="flex items-center gap-6">
             <CategoriesDropdown />
             <ul className="flex gap-5">

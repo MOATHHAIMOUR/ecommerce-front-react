@@ -1,11 +1,13 @@
+import { Outlet } from "react-router-dom";
 import Footer from "src/core/components/Footer";
 import Header from "src/core/components/Header";
+import Home from "src/features/Home/pages/Home";
 
 const MainLayout = () => (
-  <div className="mx-auto flex h-[100vh] w-3/4 flex-col">
+  <div className="flex-col">
     <Header />
-    <div className="flex-grow-[1]"></div>
-    <Footer />
+
+    <Home />
   </div>
 );
 
