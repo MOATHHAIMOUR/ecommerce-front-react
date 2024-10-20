@@ -46,7 +46,7 @@ const CategoriesDropdown = () => {
 
       {/* Dropdown menu */}
       {isOpen && (
-        <ul className="absolute left-0 z-10 w-full rounded-md bg-white py-2 shadow-lg">
+        <ul className="absolute left-0 z-40 w-full rounded-md bg-white py-2 shadow-lg">
           {categories.map((category, index) => (
             <li key={index} className="hover:bg-gray-100">
               <button
