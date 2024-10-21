@@ -7,5 +7,5 @@ export default {
       title: ["cursive"],
     },
   },
-  plugins: [],
+  plugins: [require("tailwind-scrollbar")],
 };

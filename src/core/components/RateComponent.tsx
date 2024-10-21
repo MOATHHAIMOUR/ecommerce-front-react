@@ -63,6 +63,7 @@ function Star({
 
   return (
     <div
+      className="cursor-pointer"
       onClick={() => handleSelectionClick(index)}
       onMouseEnter={() => handleSelectionHover(index)}
       onMouseLeave={() => handleSelectionHover(null)}
